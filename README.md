@@ -7,8 +7,8 @@ Youtube Blocker giúp các ông bố, bà mẹ kiểm soát nội dung của con
 - Các bạn có thể dễ dàng chặn những video hoặc kênh gây phiền nhiễu, liên tục xuất hiện bởi YouTube. 
 - Extension siêu nhẹ (100KB), chạy song song với trình duyệt, không ngốn RAM, không gây ảnh hưởng đến trải nghiệm lướt web của bạn và chặn toàn bộ nội dung trên Youtube. 
 - Playlist ( Danh sách phát) và các video nhúng + tự động phát sẽ vẫn hoạt động, ngay cả khi video có chứa các nội dung bị chặn. 
-- Các bố mẹ có thể chặn các kênh và video theo từ khóa trong tên hoặc toàn bộ kênh bằng ID.!
-[image](https://user-images.githubusercontent.com/42940093/111024997-3185d980-8414-11eb-8f02-0370c0ac9706.png)
+- Các bố mẹ có thể chặn các kênh và video theo từ khóa trong tên hoặc toàn bộ kênh bằng ID.
+![image](https://user-images.githubusercontent.com/42940093/111024997-3185d980-8414-11eb-8f02-0370c0ac9706.png)
 
 
 **Nó cũng có một số tính năng bổ sung:**
