@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cm/codemirror.min.css" rel="stylesheet" type="text/css">
+    <link href="cm/dialog.min.css" rel="stylesheet" type="text/css">
+    <link href="cm/fullscreen.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>YouTube Blocker - Cài đặt</title>
+    <link rel="shortcut icon" type="image/png" href="../../assets/icons/16.png"/>
+  </head>
+  <body>
+    <div style="border-bottom: 1px solid #ccc">
+      <h1 style="display:inline">YouTube Blocker</h1>
+      <span style="float:right">[<a target="_blank" href="https://github.com/truongsofm/youtube-blocker-v2/wiki/T%C3%B9y-ch%E1%BB%8Dn-b%E1%BB%99-l%E1%BB%8Dc">Hướng dẫn sử dụng</a>]
+        [<a target="_blank" href="https://github.com/truongsofm/youtubeblocker/releases">Các bản cập nhật</a>]<br /><small style="float:right">v2</small></span>
+    </div>
+    <div id="main">
+      <form id="login" style="display:none">
+        <p>Extension đã tự động khóa, vui lòng nhập mật khẩu để tiếp tục</p>
+        <div>
+          <label class="block-label" style="margin-right:5px" for="pass_login">Mật khẩu</label>
+          <input id="pass_login" type="password" size="32" autocomplete="off" class="form-text" />
+        </div>
+        <div>
+          <input type="submit" id="send_login" value="Login" />
+          <div class="status-text" id="status_login"></div>
+        </div>
+      </form>
+      <form id="options" style="display:none">
+        <legend>Tùy chỉnh bộ lọc</legend>
+        <fieldset>
+          <div>
+            <label class="block-label" for="title">Chặn theo tiêu đề video</label>
+            <textarea id="title"></textarea>
+            <div id="title_resizer" class="cm-resizer"></div>
+          </div>
+          <div>
+            <label class="block-label" for="channelName">Chặn theo tên kênh</label>
+            <textarea id="channelName"></textarea>
+            <div id="channelName_resizer" class="cm-resizer"></div>
+          </div>
+          <div>
+            <label class="block-label" for="videoId">Chặn theo ID video</label>
+            <textarea id="videoId"></textarea>
+            <div id="videoId_resizer" class="cm-resizer"></div>
+          </div>
+          <div>
+            <label class="block-label" for="channelId">Chặn theo ID kênh YouTube</label>
+            <textarea id="channelId"></textarea>
+            <div id="channelId_resizer" class="cm-resizer"></div>
+          </div>
+          <div>
+            <label class="block-label" for="comment">Chặn các từ thô tục có trong bình luận</label>
+            <textarea id="comment"></textarea>
+            <div id="comment_resizer" class="cm-resizer"></div>
+          </div>
+        </fieldset>
+        <legend>Nâng cao lever chặn :))</legend>
+        <fieldset>
+          <div>
+            <input id="enable_javascript" type="checkbox" />
+            <label for="enable_javascript">Bật mode chặn nâng cao</label>
+          </div>
+          <div>
+            Đừng bật cái này, vì nó là tính năng chưa ra mắt
+            <a target="_blank" href="https://github.com/truongsofm"></a>
+          </div>
+          <div id="advanced_tab" style="display: none" class="advanced">
+            <label class="block-label" for="javascript">Tùy chỉnh function</label>
+            <textarea id="javascript"></textarea>
+            <div id="javascript_resizer" class="cm-resizer"></div>
+          </div>
+        </fieldset>
+        <legend>Tùy chọn khác</legend>
+        <fieldset>
+          <div>
+            <label class="block-label" for="pass_save">Đặt mật khẩu:</label>
+            <input id="pass_save" type="password" autocomplete="off" />
+          </div>
+          <div>
+            <label class="block-label" for="block_message">Chặn thông báo từ video</label>
+            <input id="block_message" type="text" autocomplete="off" />
+          </div>
+          <div>
+            <label class="block-label" for="vidLength_0">Tính năng sắp ra mắt :((</label>
+            <select id="vidLength_type" class="select">
+              <option value="block">Chặn</option>
+              <option value="allow">Đồng ý</option>
+            </select>
+            <span style="font-size:small; font-style:italic">video</span>
+            <input id="vidLength_0" type="number" min="0" max="99999" size="5" />
+            <small>-</small>
+            <input id="vidLength_1" type="number" min="0" max="99999" size="5" />
+            <span style="font-size:small; font-style:italic">giây</span>
+          </div>
+          <div>
+            <input id="disable_mixes" type="checkbox" />
+            <label for="disable_mixes">Chặn các playlist được tạo tự động từ YouTube</label>
+          </div>
+          <div>
+            <input id="disable_trending" type="checkbox" />
+            <label for="disable_trending">Vô hiệu hóa trang trending</label>
+          </div>
+          <div>
+            <input id="autoplay" type="checkbox" />
+            <label for="autoplay">Tự động phát video tiếp theo khi chặn</label>
+          </div>
+          <div>
+              <input id="suggestions_only" type="checkbox" />
+              <label for="suggestions_only">Bật chế độ chỉ ẩn video (URL trực tiếp và video nhúng sẽ không bị chặn)</label>
+          </div>
+        </fieldset>
+        <div class="buttons">
+          <input type="submit" id="save_btn" value="Lưu" />
+          <input type="button" id="export" value="Tạo JSON" />
+          <input type="button" id="import" value="Nhập JSON" />
+          <input type="file" id="myfile" accept="application/json" style="display:none" />
+          <span class="status-text" id="status_save"></span>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="cm/codemirror.min.js"></script>
+    <script type="text/javascript" src="cm/matchbrackets.min.js"></script>
+    <script type="text/javascript" src="cm/active-line.min.js"></script>
+    <script type="text/javascript" src="cm/closebrackets.min.js"></script>
+    <script type="text/javascript" src="cm/search.min.js"></script>
+    <script type="text/javascript" src="cm/searchcursor.min.js"></script>
+    <script type="text/javascript" src="cm/match-highlighter.min.js"></script>
+    <script type="text/javascript" src="cm/dialog.min.js"></script>
+    <script type="text/javascript" src="cm/fullscreen.min.js"></script>
+    <script type="text/javascript" src="cm/javascript.min.js"></script>
+    <script type="text/javascript" src="cm/simple.min.js"></script>
+    <script type="text/javascript" src="cm-syntax.js"></script>
+    <script type="text/javascript" src="options.js"></script>
+  </body>
+</html>
