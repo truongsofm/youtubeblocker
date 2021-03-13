@@ -27,7 +27,7 @@ Video hướng dẫn cài extension :  [https://youtu.be/ZDl5OPmn5Mw](https://yo
 
 - Sau khi giải nén file ra, các ông bố bà mẹ sẽ thấy có file JSON, có tên youtube_blocker_backup.json.  
 - Khi tải về chỉ cần click vào tiện ích, sau đó chọn nhập JSON. 
-- file JSON này là bộ lọc mình đã cài sẵn, các ông bố bà mẹ thích ăn sẵn thì chỉ việc nhập JSON là nghỉ khỏe :D
+- file JSON này là bộ lọc mình đã cài sẵn, các ông bố bà mẹ chỉ việc nhập JSON là nghỉ khỏe :D
 ![image](https://user-images.githubusercontent.com/42940093/111024975-0b603980-8414-11eb-9790-da0bde8b9c53.png)
 
 *Extension có sử dụng và kết hợp nhiều mã nguồn mở từ các diễn đàn và stackoverflow. 
