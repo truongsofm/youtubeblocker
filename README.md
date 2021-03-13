@@ -1,4 +1,5 @@
 Đọc kĩ trước khi sử dụng trước khi dùng =)))
+
 Extension này chỉ sử dụng được trên trình duyệt máy tính, ko áp dụng với smartphone hay smart TV.
 
 Youtube Blocker giúp các ông bố, bà mẹ kiểm soát nội dung của con, cháu mình trên YouTube.
