@@ -17,7 +17,7 @@ Youtube Blocker giúp các ông bố, bà mẹ kiểm soát nội dung của con
 
 *Tải về tại đây :*  [https://github.com/truongsofm/youtubeblocker/releases/download/v2/youtubeblocker.zip](https://github.com/truongsofm/youtubeblocker/releases/download/v2/youtubeblocker.zip)  
 
-Video hướng dẫn cài extension :  [https://youtu.be/doDxx8_Rz8M](https://youtu.be/doDxx8_Rz8M)
+Video hướng dẫn cài extension :  [https://youtu.be/ZDl5OPmn5Mw](https://youtu.be/ZDl5OPmn5Mw)
 
 - Sau khi giải nén file ra, các ông bố bà mẹ sẽ thấy có file JSON, có tên youtube_blocker_backup.json.  
 - Khi tải về chỉ cần click vào tiện ích, sau đó chọn nhập JSON. 
