@@ -11,7 +11,9 @@ Youtube Blocker giúp các ông bố, bà mẹ kiểm soát nội dung của con
 ![image](https://user-images.githubusercontent.com/42940093/111024997-3185d980-8414-11eb-8f02-0370c0ac9706.png)
 
 Hoặc cũng có thể bấm vào nút 3 chấm video để chặn kênh & video
+
 ![image](https://user-images.githubusercontent.com/42940093/111025777-f043f880-8418-11eb-8892-b663796ee194.png)
+
 
 **Nó cũng có một số tính năng bổ sung:**
 
